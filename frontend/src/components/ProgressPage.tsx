@@ -464,11 +464,7 @@ export default function App() {
           icon={<Activity size={22} />}
         />
 
-         <StatCard
-          title='Current Program'
-          value={activeProgram.label}
-          icon={<Activity size={22} />}
-        />
+         
 
         <StatCard
           title='Isolation'
