@@ -296,7 +296,6 @@
 
 import { useEffect, useState } from 'react'
 import {
-  Dumbbell,
   Flame,
   Activity,
   Database,
