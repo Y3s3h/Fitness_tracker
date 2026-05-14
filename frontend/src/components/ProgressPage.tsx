@@ -42,7 +42,7 @@ export default function ProgressPage() {
     setLoading(true)
     try {
       const res = await fetch(
-        `/api/progress/${USER_ID}?program_type=${activeProgram.program_type}&program_id=${activeProgram.program_id}`
+        `https://fitness-tracker-18y8.onrender.com/api/progress/${USER_ID}?program_type=${activeProgram.program_type}&program_id=${activeProgram.program_id}`
       )
       const data = await res.json()
       setRecords(data.records || [])
@@ -61,7 +61,7 @@ export default function ProgressPage() {
     }
 
     try {
-      const res = await fetch('/api/progress/update', {
+      const res = await fetch('https://fitness-tracker-18y8.onrender.com/api/progress/update', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
